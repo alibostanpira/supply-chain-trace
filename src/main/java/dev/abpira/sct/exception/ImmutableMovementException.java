@@ -1,0 +1,11 @@
+package dev.abpira.sct.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class ImmutableMovementException extends RuntimeException {
+    public ImmutableMovementException(String message) {
+        super(message);
+    }
+}
